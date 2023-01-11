@@ -16,4 +16,13 @@ var options = {
   xfwd: true
 };
 
-var server = httpProxy.createProxyServer(options).listen(443);
+var server = httpProxy.createProxyServer(options);
+
+server.listen(443);
+
+server.on('error', function (err, req, res) {
+  res.writeHead(500, {
+    'Content-Type': 'text/plain'
+  });
+  res.end('Something went wrong, but we persist.');
+});
