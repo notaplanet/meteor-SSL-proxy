@@ -1,0 +1,22 @@
+{
+  "name": "meteor-ssl-proxy",
+  "version": "1.1.0",
+  "description": "A simple https proxy",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notaplanet/meteor-SSL-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notaplanet/meteor-SSL-proxy/issues"
+  },
+  "homepage": "https://github.com/notaplanet/meteor-SSL-proxy#readme",
+  "dependencies": {
+    "node-http-proxy": "^0.2.4"
+  }
+}
